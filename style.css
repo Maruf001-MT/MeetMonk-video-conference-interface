@@ -26,7 +26,7 @@ body {
   --navigation-bg: #fff;
   --navigation-box-shadow: 0 2px 6px 0 rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
   --main-color: #3d42df;
-  --message-bg: #f3f4f9;
+  --message-bg: #ebeefd;
   --message-bg-2: #3d42df;
   --message-text: #2c303a;
   --placeholder-text: #a2a4bc;
@@ -130,7 +130,7 @@ a {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  height: calc(100% - 72px);
+  height: 100%;
 }
 
 .chat-header {
@@ -190,7 +190,7 @@ a {
   border-radius: 0 12px 12px 12px;
   font-size: 12px;
   line-height: 16px;
-  max-width: calc(100% - 32px);
+  max-width: calc(100% - 30px);
   color: var(--message-text);
 }
 
@@ -311,6 +311,19 @@ a {
   flex-direction: column;
   align-items: center;
 }
+.app-main .heading{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #dbdcff;
+  border-radius: 15px;
+}
+.app-main .heading h2{
+  color: #3d42df;
+}
 
 .video-call-wrapper {
   width: 100%;
@@ -319,11 +332,12 @@ a {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .video-participant {
-  width: 33.3%;
-  height: 50%;
+  width: 50%;
+  height: 100%;
   position: relative;
 }
 .video-participant img {
@@ -532,7 +546,7 @@ a {
   }
 
   .right-side {
-    position: absolute;
+    position: fixed;
     right: 0px;
     background-color: var(--chat-background);
     transform: translateX(100%);
@@ -563,7 +577,27 @@ a {
   .mode-switch {
     left: 16px;
   }
-
+  .app-main .heading h2{
+    font-size: 1rem;
+    padding-right: 5px;
+    border-right: 1px solid #3d42df;
+  }
+  .app-main .heading p{
+    font-size: 0.8rem;
+    padding: 0 5px;
+    border-right: 1px solid #3d42df;
+  }
+  .app-main .heading p:nth-child(3){
+    border-right: none;
+  }
+  .video-call-wrapper{
+    flex-wrap: none;
+  }
+  .video-participant{
+    margin: 5px;
+    width: 100%;
+    height: 50%;
+  }
   .video-call-actions {
     padding-top: 32px;
   }
@@ -589,10 +623,9 @@ a {
     margin: 0 4px;
     font-size: 12px;
   }
-}
-@media screen and (max-width: 520px) and (max-height: 720px) {
-  .video-participant {
-    width: 50%;
-    height: 33.3%;
+  .chat-area{
+    border: 1px solid #3d42df;
+    height: 100%;
+    border-radius: 10px;
   }
 }
