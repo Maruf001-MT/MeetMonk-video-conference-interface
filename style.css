@@ -392,7 +392,7 @@ body #app #chathead {
   height: 40%;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  background: white url("https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") center center no-repeat;
+  background: white url("https://images.unsplash.com/photo-1590373267440-c7e438d0ccde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") center center no-repeat;
   background-size: cover;
   position: absolute;
   z-index: 1;
