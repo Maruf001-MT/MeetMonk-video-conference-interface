@@ -235,6 +235,10 @@ Vue.directive("draggable", {
           <div id="chathead"
               v-draggable="draggableOptions"
               :class="{open : isOpen, 'drag-released' : !isOpen}">
+            <div class="participant-actions">
+              <button class="btn-mute"></button>
+              <button class="btn-camera"></button>
+            </div>
           </div>
       `,
     data() {

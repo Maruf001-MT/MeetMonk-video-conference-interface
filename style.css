@@ -192,10 +192,14 @@ a {
   background-color: var(--message-bg);
   padding: 8px 16px;
   border-radius: 0 12px 12px 12px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 16px;
   max-width: calc(100% - 30px);
   color: var(--message-text);
+}
+.time{
+  font-size: 0.8rem;
+  color: rgb(162, 162, 162);
 }
 
 .message-wrapper {
@@ -217,7 +221,9 @@ a {
 .message-wrapper.reverse .name {
   text-align: right;
 }
-
+.message-wrapper.reverse .time{
+  text-align: right;
+}
 .message-file {
   border: 1px solid var(--message-bg);
   width: 100%;
@@ -388,8 +394,8 @@ a {
 }
 
 body #app #chathead {
-  width: 25%;
-  height: 35%;
+  width: 30%;
+  height: 40%;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   background: white url("https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") center center no-repeat;
