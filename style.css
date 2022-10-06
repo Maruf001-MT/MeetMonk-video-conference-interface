@@ -274,30 +274,38 @@ a {
 }
 
 .chat-typing-area {
-  display: flex;
   border-radius: 10px;
-  padding: 8px;
   box-shadow: var(--navigation-box-shadow);
   background-color: var(--message-bg);
-  width: 100%;
-  border: 2px solid #7c80fd;
-  box-shadow: 0 0 5px #7c80fd;
 }
 .chat-typing-area .total_tm{
-  width: 40%;
-  border-right: 2px solid #7c80fd;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #7c80fd;
+  box-shadow: 0 0 5px #7c80fd;
 }
 .chat-typing-area .total_tm h3, .summary h3{
   font-size: 1rem;
   color: rgb(102, 237, 255);
+  display: inline-block;
 }
 .chat-typing-area .total_tm p, .summary p{
   font-size: 13px;
   color: #d9daff;
+  display: inline-block;
 }
 .chat-typing-area .summary{
-  width: 60%;
-  padding-left: 12px;
+  width: 100%;
+  border: 2px solid #7c80fd;
+  box-shadow: 0 0 5px #7c80fd;
+  margin-top: 10px;
+  padding: 0 10px;
+  
+}
+.chat-typing-area .summary h3{
+  width: 100%;
+  text-align: center;
+  padding: 0;
 }
 .app-main {
   flex: 1;
